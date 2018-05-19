@@ -30,6 +30,7 @@ def detect_text(path):
     print("first element: {}".format(texts[0].description))
     return texts[0].description
 
+
 def choose_text_by_location(orientation, texts):
     if orientation is None:
         pass

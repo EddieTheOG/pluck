@@ -4,3 +4,4 @@ images/
 recordings/
 venv/
 config/
+src/__pycache__/
