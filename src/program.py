@@ -10,6 +10,10 @@ from google.cloud.vision import types
 import json
 import pprint
 
+
+
+
+
 from googleapiclient.discovery import build
 
 
@@ -20,18 +24,18 @@ def main():
     # parse html
     # retrieve image from yt video
     # post image to google cloud
-    config = get_config_info()
-    api_key = config["api_key"]
-    cse_id = config["cse_id"]
-    manifest_url = download_yt_video("https://www.youtube.com/watch?v=SCE9XWg7RJU")
-    path_of_video = trim_video_file(manifest_url)
-    path_of_image = convert_video_to_image(path_of_video)
-    text_from_image = detect_text(path_of_image)
-    results = google_search(text_from_image, api_key, cse_id, num=3)
-    for result in results:
-        pprint.pprint(result)
+    # config = get_config_info()
+    # api_key = config["api_key"]
+    # cse_id = config["cse_id"]
+    # manifest_url = download_yt_video("https://www.youtube.com/watch?v=SCE9XWg7RJU")
+    # path_of_video = trim_video_file(manifest_url)
+    # path_of_image = convert_video_to_image(path_of_video)
+    # text_from_image = detect_text(path_of_image)
+    # results = google_search(text_from_image, api_key, cse_id, num=3)
+    # for result in results:
+    #     pprint.pprint(result)
 
-    # retrieve_image_from_video_element(browser)
+
 
 
 def request_url_from_user():
